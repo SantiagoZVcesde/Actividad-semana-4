@@ -71,8 +71,8 @@ public class Carta {
         this.material = material;
     }
     public void setPrecio(double precio) {
-        if (precio >= 0) {
-            throw new IllegalArgumentException("El precio no puede ser negativo");
+        if (precio <= 0) {
+            throw new IllegalArgumentException("El precio debe ser positivo");
         }
         this.precio = precio;
     }
